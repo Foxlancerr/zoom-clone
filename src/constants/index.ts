@@ -1,8 +1,9 @@
-import { ISideBarLinks } from "@/types";
+import { IHomeCardLinks, ISideBarLinks } from "@/types";
 import { FaHome } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 import { MdOutlineDateRange } from "react-icons/md";
 import { IoVideocam } from "react-icons/io5";
+import { FiUserPlus } from "react-icons/fi";
 
 export const sideBarLinks: ISideBarLinks = [
   {
@@ -29,5 +30,36 @@ export const sideBarLinks: ISideBarLinks = [
     label: "Personal Room",
     route: "/personal-rooms",
     icon: FiPlus,
+  },
+];
+
+export const homeCardLinks: IHomeCardLinks = [
+  {
+    title: "New Meeting",
+    tagline: "Setup a new recording",
+    route: "/",
+    Icon: FaHome,
+    ClassName: "bg-[#FF742E]",
+  },
+  {
+    title: "Join Meeting",
+    tagline: "via invitation link",
+    route: "/",
+    Icon: FiUserPlus,
+    ClassName: "bg-[#0E78F9]",
+  },
+  {
+    title: "Schedule Meeting",
+    tagline: "Plan your meeting",
+    route: "/",
+    Icon: MdOutlineDateRange,
+    ClassName: "bg-[#830EF9]",
+  },
+  {
+    title: "View Recordings",
+    tagline: "Meeting recordings",
+    route: "/",
+    Icon: IoVideocam,
+    ClassName: "bg-[#F9A90E]",
   },
 ];
