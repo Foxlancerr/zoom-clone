@@ -4,6 +4,7 @@ import { FiPlus } from "react-icons/fi";
 import { MdOutlineDateRange } from "react-icons/md";
 import { IoVideocam } from "react-icons/io5";
 import { FiUserPlus } from "react-icons/fi";
+import { Avator1, Avator2, Avator3, Avator4, Avator5 } from "@/assets";
 
 export const sideBarLinks: ISideBarLinks = [
   {
@@ -63,3 +64,5 @@ export const homeCardLinks: IHomeCardLinks = [
     ClassName: "bg-[#F9A90E]",
   },
 ];
+
+export const avatorImages = [Avator1, Avator2, Avator3, Avator4, Avator5];

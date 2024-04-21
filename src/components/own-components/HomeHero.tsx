@@ -13,7 +13,7 @@ function HomeHero() {
   );
   return (
     <section
-      className="w-full h-[303px] max-sm:h-[250px] rounded-[20px] max-sm:rounded p-8 max-sm:p-5 flex flex-col justify-between items-end bg-left-bottom bg-cover shadow shadow-black/60"
+      className="w-full h-[270px] max-sm:h-[250px] rounded-[20px] max-sm:rounded p-8 max-sm:p-5 flex flex-col justify-between items-end bg-left-bottom bg-cover shadow shadow-black/60"
       style={{ backgroundImage: `url(${HeroBgImage.src})` }}
     >
       <h2 className="py-2 px-3 bg-white/15 rounded text-xl max-sm:text-[16px]">

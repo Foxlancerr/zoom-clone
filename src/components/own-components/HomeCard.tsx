@@ -10,7 +10,7 @@ function HomeCard({ ClassName, title, tagline, Icon, route }: IHomeCardItem) {
   return (
     <Link
       href={route}
-      className={`cursor-pointer flex flex-col min-h-[260px] rounded-[14px] w-full p-6 items-start justify-between ${ClassName}`}
+      className={`cursor-pointer flex flex-col min-h-[240px] rounded-[14px] w-full p-6 items-start justify-between ${ClassName}`}
     >
       <span className="p-2 text-3xl rounded bg-white/15">
         <Icon></Icon>
