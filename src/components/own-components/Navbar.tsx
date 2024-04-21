@@ -1,19 +1,18 @@
 import Link from "next/link";
 import React from "react";
 import { IoVideocam } from "react-icons/io5";
+import MobileNav from "./MobileNav";
+import MetMeLogo from "./Logo";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10">
-      <Link href="/" className="relative items-center flex gap-3">
-        <span className="p-2 bg-blue-1 rounded">
-        <IoVideocam className="text-3xl text-white"></IoVideocam>
-        </span>
-        <h1 className="text-4xl">
-          Met<span className="text-blue-1 font-extrabold">Me</span>
-        </h1>
-      </Link>
-      <div>profile</div>
+    <nav className="flex justify-between fixed z-50 w-full items-center bg-dark-1 px-6 py-4 lg:px-10">
+      <MetMeLogo mobile></MetMeLogo>
+      <div className="flex justify-between gap-2">
+        <h1>Login</h1>
+        <h1>user</h1>
+        <MobileNav></MobileNav>
+      </div>
     </nav>
   );
 }
